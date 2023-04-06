@@ -10,6 +10,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   
+  
 </head>
 
 <body>
@@ -19,7 +20,7 @@
       <a class="navbar-brand" href="index.html"><img src="logotallerrayomkeen.png" class="img-responsive" width="266" height="150" alt="Logo Taller Mecánico"></a>
       <div>
          <h1 class="titulo">RAYO MAKWEEN</h1>
-        <h2 class="subtitulo">TALLER MECANICO</h2>
+        <h5 class="subtitulo">TALLER MECANICO</h5>
       </div>
            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -44,59 +45,74 @@
                </li>
                </div>
 
-      
-        
+     
+
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="form-inline ml-auto">
+                  <div class="input-group">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                    </div>
+                  </div>
+                  <div class="input-group ml-2">
+                    <select class="custom-select" id="filtro">
+                      <option selected></option>
+                      <option value="opcion1">Nombre del mecanico</option>
+                      <option value="opcion2">Categoria de atencion</option>
+                      <option value="opcion3">Palabra clave</option>
+                    </select>
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary" type="button">Aplicar filtro</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
             </ul>
       </div>
     </div>
-    
   </nav>
 
 
-  <div id="carouselExampleCaptions" class="carousel slide">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <ol class="carousel-indicators">
+      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+    </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <a href="trabajos_realizados.html">
-           <img src="FOTON_Aumark.png" class="d-block w-100" alt="FOTON">
-        </a>        
+        <a href="trabajos_realizados.html"><img src="GREATWALL_W6.jpg" class="d-block w-100" alt="GREATWALLW6"></a>
         <div class="carousel-caption d-none d-md-block">
-          <h5>FOTON AUMARK</h5>
-          <p>" gracias la taller rayo Makween mi vehiculo quedo estupendo! "</p>
+          <h5>GREAT WALL WINGLE 6</h5>
+          <p>REPARACION: Fuga de líquido de frenos en la línea de frenos trasera, fue reparada.</p>
         </div>
       </div>
       <div class="carousel-item">
-        <a href="trabajos_realizados.html">
-           <img src="GREATWALL_W6.jpg" class="d-block w-100" alt="GREATWALL WINGLE 6">
-        </a>    
+        <a href="trabajos_realizados.html"><img src="FAW_OLEY.jpg" class="d-block w-100" alt="FAW OLEY"></a>
         <div class="carousel-caption d-none d-md-block">
-          <h5>GREATWALL WINGLE 6</h5>
-          <p>" gracias la taller rayo Makween mi vehiculo quedo estupendo! "</p>
+          <h5>FAW OLEY</h5>
+          <p>REPARACION: El neumático trasero izquierdo está pinchado y fue remplazado.</p>
         </div>
       </div>
       <div class="carousel-item">
-        <a href="trabajos_realizados.html">
-          <img src="LIFAN_x7.jpg" class="d-block w-100" alt="LIFAN X7">
-      </a>
+        <a href="trabajos_realizados.html"><img src="LIFAN_x7.jpg" class="d-block w-100" alt="LIFAN X7"></a>
         <div class="carousel-caption d-none d-md-block">
           <h5>LIFAN X7</h5>
-          <p>" gracias la taller rayo Makween mi vehiculo quedo estupendo! "</p>
+          <p>REPARACION: pastillas de freno delanteras están desgastadas y fueron remplazadas.</p>
         </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="visually-hidden">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+      <span class="visually-hidden">Siguiente</span>
+    </a>
   </div>
+  
 
   
 
