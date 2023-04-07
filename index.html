@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TALLER MECANICO - RAYO MAKWEEN</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
   
   
 </head>
@@ -17,6 +18,9 @@
   
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #a0191f;">
     <div class="container">
+      <li class="nav-item">
+        <a class="nav-link" href="agregar_mantenimiento.html">AGREGAR MANTENIMIENTO</a>
+       </li>
       <a class="navbar-brand" href="index.html"><img src="logotallerrayomkeen.png" class="img-responsive" width="266" height="150" alt="Logo Taller Mecánico"></a>
       <div>
          <h1 class="titulo">RAYO MAKWEEN</h1>
@@ -52,7 +56,7 @@
                   <div class="input-group">
                     <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
                     <div class="input-group-append">
-                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                      <button class="btn btn-outline-danger" type="submit">Buscar</button>
                     </div>
                   </div>
                   <div class="input-group ml-2">
@@ -74,47 +78,44 @@
   </nav>
 
 
-  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-    <ol class="carousel-indicators">
-      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-    </ol>
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <a href="trabajos_realizados.html"><img src="GREATWALL_W6.jpg" class="d-block w-100" alt="GREATWALLW6"></a>
-        <div class="carousel-caption d-none d-md-block">
-          <h5>GREAT WALL WINGLE 6</h5>
-          <p>REPARACION: Fuga de líquido de frenos en la línea de frenos trasera, fue reparada.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <a href="trabajos_realizados.html"><img src="FAW_OLEY.jpg" class="d-block w-100" alt="FAW OLEY"></a>
-        <div class="carousel-caption d-none d-md-block">
-          <h5>FAW OLEY</h5>
-          <p>REPARACION: El neumático trasero izquierdo está pinchado y fue remplazado.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <a href="trabajos_realizados.html"><img src="LIFAN_x7.jpg" class="d-block w-100" alt="LIFAN X7"></a>
+        <img src="LIFAN_x7.jpg" class="d-block w-100" alt="Slide 1">
         <div class="carousel-caption d-none d-md-block">
           <h5>LIFAN X7</h5>
-          <p>REPARACION: pastillas de freno delanteras están desgastadas y fueron remplazadas.</p>
+          <p>Las pastillas de freno delanteras están desgastadas y necesitan ser reemplazadas.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="BMW_220i.jpg" class="d-block w-100" alt="Slide 2">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>BMW 220i</h5>
+          <p> La batería está descargada y necesita ser reemplazada.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="DFM_H30cross.jpg" class="d-block w-100" alt="3">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>DFM H30 CROSS</h5>
+          <p>El filtro de aire está sucio y necesita ser reemplazado.</p>
         </div>
       </div>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="carouselExampleCaptions" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Anterior</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="carouselExampleCaptions" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Siguiente</span>
-    </a>
+    </button>
   </div>
-  
-
-  
 
 
 </body>
